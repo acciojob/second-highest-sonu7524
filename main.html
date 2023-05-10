@@ -9,9 +9,18 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			//Write your code here
-			
-		}
+	    const max = 0;
+    const max2 = 0;
+	for(let i in arr){
+        max = Math.max(max, arr[i]);
+    }
+	for(let i in arr){
+        if(arr[i]> max2 && arr[i] < max){
+            max2 = arr[i];
+        }
+    }
+    return max2;	
+}
 
 		function Main() {
 			var n = prompt("Enter the number of elements");
